@@ -1,6 +1,6 @@
 /* Função Validar */
 function validar() {
-    // pegando o valor do nome pelos names
+    // pegando o valor do nome pelos names (id)
     var nome = document.getElementById("nome");
     var sobrenome = document.getElementById("sobrenome");
     var cpf = document.getElementById("cpf");
@@ -55,6 +55,9 @@ function validar() {
       return;
     }
     alert("Formulário enviado com sucesso!");
+    document.forms["frm"].reset(); //Limpa o formulário para inserção de novos dados
+    nome.focus(); // posiciona o focus no campo nome
+    return;
     // envia o formulário
     //formulario.submit();
   }
