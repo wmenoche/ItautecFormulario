@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/Formulario_itautech5/css/formulario.css">
+    <title>Cadastro Pessoal - Atração</title>
+</head>
+<body>
+    <script src="/Formulario_itautech5/javascript/validacoesdoformulario.js"></script>
+    
+            <div id="cabecalho">
+                <h1>Cadastro Pessoal - Atração</h1>        
+            </div>
+<div class="container">
+    <form>
+        <div>
+            <h2>Dados pessoais</h2>
+        </div>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label>*Nome</label>
+                <input type="text" nome="nome" id="nome">
+            </div>
+            <div class="campo">
+                <label>*Sobrenome</label>
+                <input type="text" nome="sobrenome" id="sobrenome">
+            </div>
+        </fieldset>  
+        <fieldset class="grupo">
+            <div class="campo">
+                <label>*CPF</label>
+                <input type="text" nome="cpf" id="cpf">
+            </div>
+            <div class="campo">
+                <label>RG</label>
+                <input type="text" nome="rg" id="rg">
+            </div>
+        </fieldset>       
+            <div class="campo">
+                <label>Qual o seu gênero?</label>
+                <select name="sexo">
+                    <option value="semselecao">--------</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outros">Outros</option>
+                    <option value="naoinformar">Prefiro não Informar</option>
+                </select>
+            </div>
+            <div>
+                <h2>Informe seu endereço</h2>
+            </div>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label>*Rua/Avenida...</label>
+                <input type="text" nome="endereco" id="endereco">
+            </div>
+            <div class="campo">
+                <label>*Numero</label>
+                <input type="text" nome="numero" id="numero">
+            </div>
+        </fieldset>
+        <div class="grupo">
+            <div class="campo">
+                <label>Complemento</label>
+                <input type="text" nome="complemento" id="complemento">
+            </div>
+        </div>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label>Bairro</label>
+                <input type="text" nome="bairro" id="bairro">
+            </div>  
+            <div class="campo">
+                <label>Cidade</label>
+                <input type="text" nome="cidade" id="cidade">
+            </div>
+        </fieldset> 
+        <fieldset class="grupo"> 
+            <div class="campo">
+                <label>Estado</label>
+                <input type="text" nome="estado" id="estado">
+            </div>     
+            <div class="campo">
+                <label>*Cep</label>
+                <input type="text" nome="cep" id="cep">
+            </div>
+        </fieldset> 
+        <div>
+            <h2>Seus Contatos</h2>
+        </div>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label>Whatsapp</label>
+                <input type="text" nome="Whatsapp" id="Whatsapp"></input>
+            </div>
+            <div class="campo">
+                <label>Email</label>
+                <input type="email" nome="email" id="email"></input>
+            </div>
+        </fieldset>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label>*Telefone Celular</label>
+                <input type="text" nome="celular" id="celular"></input>
+            </div>
+            <div class="campo">
+                <label>Telefone para Contato</label>
+                <input type="text" nome="telcontato" id="telcontato"></input>
+            </div>            
+        </fieldset>                      
+    </form>
+</div>
+            <div id="rodape">
+                <button type="submit" id="botao" onclick=validar()>Cadastrar</button>
+                <!-- Chama a função validar() do JS no momento que o usuário clicar em Cadastrar; -->
+            </div>
+   
+            <div>
+                <p id="inforodape">Todos os campos com asteristicos (*) são de preenchimento obrigatório</p>
+            </div>
+</body>
+</html>
